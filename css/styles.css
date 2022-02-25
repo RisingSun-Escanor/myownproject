@@ -318,7 +318,7 @@ body {
 /* Footer */
 #contacts {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/c1.JPG);
+    url(../img/c1.jpg);
   min-height: 250px;
   background-attachment: fixed;
   background-position: center;
