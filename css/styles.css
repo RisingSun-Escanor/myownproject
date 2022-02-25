@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #d81324;
+  --secondary: #0b2154;
+  --light: #f2f2f2;
+  --dark: #111111;
+  --text: #ffc513;
+}
+
+body {
+  width: 100%;
+}
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav {
+    border-top: 1px solid #eeeeee;
+  }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+  height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+  top: -100px;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+
+/*** Carousel ***/
+.carousel-item img {
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  bottom: 200px;
+}
+
+.carousel-caption h5 {
+  color: var(--text);
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-caption a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--primary);
+  padding: 10px 30px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 360px) {
+  .carousel-caption {
+    bottom: 40px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+
+  .carousel-caption p {
+    font-size: 9px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .carousel-caption {
+    bottom: 90px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 35px;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .carousel-caption {
+    bottom: 160px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 50px;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .carousel-caption {
+    bottom: 200px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 60px;
+  }
+
+  .carousel-caption p {
+    font-size: 18px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+}
+
+/** Service Start Section 1 **/
+#facilities {
+  background-color: var(--light);
+  padding: 30px 0px;
+}
+
+#facilities h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--primary);
+  padding-bottom: 5px;
+}
+
+#facilities .title {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+#facilities .title p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+#facilities .card-body {
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+#facilities .card {
+  margin: 20px 10px;
+}
+
+#facilities .card-body {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+#facilities .card-img-top {
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+}
+
+/* Facilities Start Section 2 */
+
+#facilities2 h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--primary);
+  padding-bottom: 5px;
+}
+
+#facilities2 .title {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+#facilities2 .title p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* Facilities Start Section 3 */
+#facilities3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/bg3.JPG);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#facilities3 h1 {
+  font-size: 60px;
+}
+
+#facilities3 button a:hover {
+  color: var(--dark);
+}
+
+#facilities4 {
+  background-color: var(--light);
+  padding: 30px 0px;
+}
+
+#facilities4 h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--primary);
+  padding-bottom: 5px;
+}
+
+#facilities4 .title {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+#facilities4 p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#facilities4 .card {
+  margin: 20px 10px;
+}
+
+#facilities4 .card-body {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+#facilities .c2 {
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+#facilities4 .card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/* Footer */
+#contacts {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/c1.JPG);
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
